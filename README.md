@@ -12,6 +12,7 @@
 ## 2. Installation
 - Dependencies: Download django extension, and dj_database_url, gunicorn
 - Installation Instructions: Provide step-by-step instructions on how to install and set up your project.
+- All of requirements are installed on requirements.txt
 ## 3. Usage
         1. Start by downloading Django and Supabase_py newest version by using pip install
         2. pip install django
