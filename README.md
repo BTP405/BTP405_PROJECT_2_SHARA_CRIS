@@ -1,8 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/545oUMxH)
 
 ## 1. Project Title and Description
-- Title: This is the Musify, it replicates many music app projects. Musify stands as a state-of-the-art music application that seamlessly combines the robustness of PostgreSQL's backend infrastructure with the versatility of Django's frontend framework. Through Render deployment and Docker virtualization, Musify not only ensures scalability and reliability but also delivers a superior user experience, setting a new benchmark in the realm of music apps.
-- Description: 
+### Title:
++ This is the Musify, it replicates many music app projects. Musify stands as a state-of-the-art music application that seamlessly combines the robustness of PostgreSQL's backend infrastructure with the versatility of Django's frontend framework. Through Render deployment and Docker virtualization, Musify not only ensures scalability and reliability but also delivers a superior user experience, setting a new benchmark in the realm of music apps.
+
+### Description: 
 + PostgreSQL Backend: Musify's foundation lies in PostgreSQL, empowering it to efficiently manage vast volumes of music data with unparalleled reliability and data integrity, providing users with a seamless and uninterrupted experience.
 + Django Frontend: With Django's extensive capabilities at its helm, Musify delivers a dynamic and interactive frontend experience. From URL routing to API logic and rendering, Django orchestrates every aspect, ensuring a smooth and engaging user journey.
 + Render Deployment: Musify's presence on Render epitomizes simplicity and scalability. Leveraging Render's robust deployment infrastructure, Musify effortlessly scales to meet user demands, while Docker's virtualization ensures consistent performance across diverse environments.
