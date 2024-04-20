@@ -10,10 +10,9 @@
 + Render Deployment: Musify's presence on Render epitomizes simplicity and scalability. Leveraging Render's robust deployment infrastructure, Musify effortlessly scales to meet user demands, while Docker's virtualization ensures consistent performance across diverse environments.
 + Unit Testing: Musify adopts a rigorous approach to quality assurance through comprehensive unit testing. From frontend components to backend functionalities, every aspect of Musify undergoes meticulous testing, guaranteeing reliability, stability, and optimal performance throughout its lifecycle.
 ## 2. Installation
-    - Dependencies: Download django extension, and dj_database_url, gunicorn
-    - Installation Instructions: Provide step-by-step instructions on how to install and set up your project.
+- Dependencies: Download django extension, and dj_database_url, gunicorn
+- Installation Instructions: Provide step-by-step instructions on how to install and set up your project.
 ## 3. Usage
-    - Examples: 
         1. Start by downloading Django and Supabase_py newest version by using pip install
         2. pip install django
         3. pip install dj-database-url
@@ -21,23 +20,23 @@
         5. pip install gunicorn
         6. Run the server by "python3 manage.py runserver"
 ## 4. Features
-    1. Fetch_data from Postgres (Frontend - Fetching the data and then print into HTML by using Python syntaxes). Set up a Render environment for your frontend application to ensure seamless deployment and scalability.
-    2. Containerize your frontend application using Docker to ensure consistency across different environments.
-    3. Configure the PostgreSQL database connection parameters as environment variables to enable easy deployment and configuration changes.
-    4. Write unit tests for the frontend code to ensure data fetching and HTML rendering functions work correctly.
-    5. Insert_data (Backend - Inserting the data and Postgres will automatically receive newest data)
-    6. Sorting Wrapper Function (To sort the newest album for each Artist)
-    7. Get Data by selecting Table (To get all data from Django Python File)
-    8. Declare Testing Function (To make sure all the HTML and Python file can run correctly)
-    9. Deploy your Django Python file, which includes the API endpoints for selecting data from PostgreSQL, on Render.
-    10. Containerize your Django application using Docker for easy deployment and scaling.
-    11. Ensure that the Django ORM is properly configured to interact with the PostgreSQL database.
-    12. Write unit tests for both frontend and backend components of your application to ensure functionality and reliability.
-    13. Utilize testing frameworks like pytest for backend unit tests and tools like Selenium for frontend testing.
+1. Fetch_data from Postgres (Frontend - Fetching the data and then print into HTML by using Python syntaxes). Set up a Render environment for your frontend application to ensure seamless deployment and scalability.
+2. Containerize your frontend application using Docker to ensure consistency across different environments.
+3. Configure the PostgreSQL database connection parameters as environment variables to enable easy deployment and configuration changes.
+4. Write unit tests for the frontend code to ensure data fetching and HTML rendering functions work correctly.
+5. Insert_data (Backend - Inserting the data and Postgres will automatically receive newest data)
+6. Sorting Wrapper Function (To sort the newest album for each Artist)
+7. Get Data by selecting Table (To get all data from Django Python File)
+8. Declare Testing Function (To make sure all the HTML and Python file can run correctly)
+9. Deploy your Django Python file, which includes the API endpoints for selecting data from PostgreSQL, on Render.
+10. Containerize your Django application using Docker for easy deployment and scaling.
+11. Ensure that the Django ORM is properly configured to interact with the PostgreSQL database.
+12. Write unit tests for both frontend and backend components of your application to ensure functionality and reliability.
+13. Utilize testing frameworks like pytest for backend unit tests and tools like Selenium for frontend testing.
 
 ## 5. Contributing
-    - We want to implement your favorite Album, Artist or Song. 
-    _ Click on Backend and then you can add your newest data that you want to upload
+- We want to implement your favorite Album, Artist or Song. 
+_ Click on Backend and then you can add your newest data that you want to upload
     
     ```
     def insert_artist(artistid, name, artistimg, followers):
@@ -56,12 +55,12 @@
     ```
         
 ## 6. Credits
-    - Project Leader, Full Stack Developer: Cris Huynh
-    - Assistant Leader, Backend Developer: Sukhman Hara
+- Project Leader, Full Stack Developer: Cris Huynh
+- Assistant Leader, Backend Developer: Sukhman Hara
 ## 7. License
-    - This is Musify project, don't disclaim 
+- This is Musify project, don't disclaim 
 ## 8. Additional Sections (Optional)
-    - N/A
+- N/A
 
 ## Markdown Formatting Tips
   - Use headings (#, ##, ###, etc.) to structure your document.
