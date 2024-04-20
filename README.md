@@ -1,10 +1,14 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/545oUMxH)
 
 ## 1. Project Title and Description
-    - Title: This is the Musify, it replicates many music app projects
-    - Description: For the Backend, we have collected datas from PostgresSQL and then pushed into Supabase, which is the online database that we can access to the Front-end like Mongoose or MongoDB Atlas. Our Frontend is declared with Django(Using Python as URL, API and render logic, while HTML for website sheet)
+    - Title: This is the Musify, it replicates many music app projects. Musify stands as a state-of-the-art music application that seamlessly combines the robustness of PostgreSQL's backend infrastructure with the versatility of Django's frontend framework. Through Render deployment and Docker virtualization, Musify not only ensures scalability and reliability but also delivers a superior user experience, setting a new benchmark in the realm of music apps.
+    - Description: 
+    + PostgreSQL Backend: Musify's foundation lies in PostgreSQL, empowering it to efficiently manage vast volumes of music data with unparalleled reliability and data integrity, providing users with a seamless and uninterrupted experience.
+    + Django Frontend: With Django's extensive capabilities at its helm, Musify delivers a dynamic and interactive frontend experience. From URL routing to API logic and rendering, Django orchestrates every aspect, ensuring a smooth and engaging user journey.
+    + Render Deployment: Musify's presence on Render epitomizes simplicity and scalability. Leveraging Render's robust deployment infrastructure, Musify effortlessly scales to meet user demands, while Docker's virtualization ensures consistent performance across diverse environments.
+    + Unit Testing: Musify adopts a rigorous approach to quality assurance through comprehensive unit testing. From frontend components to backend functionalities, every aspect of Musify undergoes meticulous testing, guaranteeing reliability, stability, and optimal performance throughout its lifecycle.
 ## 2. Installation
-    - Dependencies: Download supabase_py, django extension, and dj_database_url
+    - Dependencies: Download django extension, and dj_database_url, gunicorn
     - Installation Instructions: Provide step-by-step instructions on how to install and set up your project.
 ## 3. Usage
     - Examples: 
@@ -12,15 +16,23 @@
         2. pip install django
         3. pip install dj-database-url
         4. pip install psycopg
-        5. pip install supabase_py
-        6. pip install gunicorn
-        7. Run the server by "python3 manage.py runserver"
+        5. pip install gunicorn
+        6. Run the server by "python3 manage.py runserver"
 ## 4. Features
-    1. Fetch_supabase_data (Frontend - Fetching the data and then print into HTML by using Python syntaxes)
-    2. Insert_data_to_supabase (Backend - Inserting the data and Supabase will automatically receive newest data)
-    3. Sorting Wrapper Function (To sort the newest album for each Artist)
-    4. Get Data by selecting Table (To get all data from Django Python File)
-    5. Declare Testing Function (To make sure all the HTML and Python file can run correctly)
+    1. Fetch_data from Postgres (Frontend - Fetching the data and then print into HTML by using Python syntaxes). Set up a Render environment for your frontend application to ensure seamless deployment and scalability.
+    2. Containerize your frontend application using Docker to ensure consistency across different environments.
+    3. Configure the PostgreSQL database connection parameters as environment variables to enable easy deployment and configuration changes.
+    4. Write unit tests for the frontend code to ensure data fetching and HTML rendering functions work correctly.
+    5. Insert_data (Backend - Inserting the data and Postgres will automatically receive newest data)
+    6. Sorting Wrapper Function (To sort the newest album for each Artist)
+    7. Get Data by selecting Table (To get all data from Django Python File)
+    8. Declare Testing Function (To make sure all the HTML and Python file can run correctly)
+    9. Deploy your Django Python file, which includes the API endpoints for selecting data from PostgreSQL, on Render.
+    10. Containerize your Django application using Docker for easy deployment and scaling.
+    11. Ensure that the Django ORM is properly configured to interact with the PostgreSQL database.
+    12. Write unit tests for both frontend and backend components of your application to ensure functionality and reliability.
+    13. Utilize testing frameworks like pytest for backend unit tests and tools like Selenium for frontend testing.
+
 ## 5. Contributing
     - We want to implement your favorite Album, Artist or Song. 
     _ Click on Backend and then you can add your newest data that you want to upload
@@ -33,7 +45,7 @@
         "artistimg": artistimg, 
         "followers": int(followers)
     }
-    response = supabase.table("artist").insert(data).execute()  
+    response = table("artist").insert(data).execute()  
 
     if 'status' in response and response['status'] in [200, 201]:
         print('Artist successfully added:', response)
